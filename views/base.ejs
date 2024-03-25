@@ -1,0 +1,32 @@
+<%-include-('header')-%>
+
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border  border-2 py-5">
+        <div class="title pb-5">
+            <div class="font-weight-bold" id="s">Login System</div>
+            <br>
+            <span>Login in for existing user</span>
+            <br>
+            <% if(locals.logout){%>
+                <div class="alert alert-success text-center pt-20px">
+                    Logout succesfully
+                </div>
+            <% } %>
+            
+        </div>
+        <form action="/route/login" method="POST" id="foam" onsubmit="return validateForm()">
+            <div class="form-group">
+                <input type="text" class="form-control"  class="error"placeholder="username" id="us" name="username">
+                <div id="error1"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" class="error"placeholder="password" id="ps" name="password">
+                <div id="error2"></div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="/static/javascipt.js"></script>
+<%-include('header')-%>

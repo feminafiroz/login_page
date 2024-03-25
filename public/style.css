@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('/assests/background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.center-div{
+    padding-top:130px;
+}
+
+#s{
+font-size: xx-large;
+}
+#error1{
+    padding-top: 4px;
+    color: red;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #error2{
+    padding-top: 3px;
+    color: red;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .form-control.is-invalid {
+    border: 1px solid red; /* Red border */
+    /* or */
+    box-shadow: 0 0 4px red; /* Red box-shadow */
+    font-size: small;
+}
+.form-control.is-valid{
+  border: 1px solid green; /* Red border */
+    /* or */
+    box-shadow: 0 0 4px green; /* Red box-shadow */
+}
